@@ -1,8 +1,8 @@
 class Stackharbinger < Formula
   desc "Track End-of-Life dates for your tech stack"
   homepage "https://stackharbinger.com"
-  url "https://rubygems.org/downloads/stackharbinger-0.3.0.gem"
-  sha256 "f8d3a1601bdceba5048fec73acb7cda5ca338c12d5675e1ba26c43faf8775ba9"
+  url "https://rubygems.org/downloads/stackharbinger-1.0.0.gem"
+  sha256 "5735f5e07eebe4f519390aef7493f1eff4b1d475bb750e559b4f21632a10e74f"
   license "MIT"
 
   depends_on "ruby" => "3.1"
@@ -16,6 +16,6 @@ class Stackharbinger < Formula
   end
 
   test do
-    assert_match "Harbinger version 0.3.0", shell_output("#{bin}/harbinger version")
+    assert_match "Harbinger version 1.0.0", shell_output("#{bin}/harbinger version")
   end
 end
